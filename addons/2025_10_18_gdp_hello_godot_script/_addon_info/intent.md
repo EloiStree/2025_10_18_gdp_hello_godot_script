@@ -1,0 +1,1 @@
+My plan here is to create a package with hundreds of small code samples and cheat sheets to learn what Godot is, one code snippet at a time. The idea is also to make some copy-pastable code whenever possible.

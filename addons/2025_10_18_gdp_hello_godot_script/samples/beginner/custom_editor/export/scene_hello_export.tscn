@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://b0f6sisteb323"]
+
+[ext_resource type="Script" uid="uid://cp3lgycxy0do0" path="res://addons/2025_10_18_gdp_hello_godot_script/samples/beginner/custom_editor/export/let_explore_export.gd" id="1_86mgw"]
+[ext_resource type="PackedScene" uid="uid://djoogagjjbx0u" path="res://addons/2025_10_18_gdp_hello_godot_script/scene/elements/mesh_instance_3d.tscn" id="2_ari3j"]
+
+[sub_resource type="Image" id="Image_ep32h"]
+
+[sub_resource type="Texture2DRD" id="Texture2DRD_777wa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hfsyl"]
+
+[node name="Node3D" type="Node3D" node_paths=PackedStringArray("it_works_with_node")]
+script = ExtResource("1_86mgw")
+it_works_with_node = NodePath(".")
+you_can_do_groupe = 15.004999999999999
+compute_add_A = 5.385
+compute_add_B = 9.62
+file_path = "uid://b5cxfvuyt7h4s"
+dir_path = "res://addons"
+global_dir_path = "C:/G/2025_10_18_gdp_hello_godot_script/icon.svg"
+global_file_path = "C:/G/2025_10_18_gdp_hello_godot_script/addons"
+markdown_file = "res://README.md"
+radian = 2.2689280275926285
+slider_value = 5
+transition_speed = 0.4966736
+color = Color(0.4392157, 0.5686275, 0.5254902, 0.827451)
+color_no_alpha = Color(0, 1.1239899, 0.8594698, 1)
+resource = SubResource("Image_ep32h")
+texture = SubResource("Texture2DRD_777wa")
+packed_scene = ExtResource("2_ari3j")
+material = SubResource("StandardMaterial3D_hfsyl")
+character_speed = 60
+character_name = "Mary"
+two_dimensional = Array[Array]([[1.0, 2.0, null], [3.0, 4.0]])
+vector3s = PackedVector3Array(0, 0, 0)
+strings = PackedStringArray("")
+altitude = 45.0
+
+[node name="Node3D" type="Node3D" parent="." node_paths=PackedStringArray("it_works_with_node")]
+script = ExtResource("1_86mgw")
+it_works_with_node = NodePath(".")
+some_button_path = NodePath("MeshInstance3D")
+vector3s = PackedVector3Array()
+strings = PackedStringArray()
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node3D"]

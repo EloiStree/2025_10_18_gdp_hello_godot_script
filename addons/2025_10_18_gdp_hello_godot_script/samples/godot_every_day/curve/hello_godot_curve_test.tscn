@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://blgyx6vi1ofdj"]
+
+[ext_resource type="Script" uid="uid://ccpi3renrf1oc" path="res://addons/2025_10_18_gdp_hello_godot_script/samples/godot_every_day/curve/hello_godot_curve.gd" id="1_nhwkf"]
+[ext_resource type="Curve" uid="uid://dy36x8lw7o8dm" path="res://addons/2025_10_18_gdp_hello_godot_script/samples/godot_every_day/curve/test_curve.tres" id="2_jma3c"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_be0vb"]
+
+[node name="HelloGodotCurveTest" type="Node2D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." node_paths=PackedStringArray("node_to_move_vertically")]
+mesh = SubResource("BoxMesh_be0vb")
+script = ExtResource("1_nhwkf")
+height_curve_with_time = ExtResource("2_jma3c")
+node_to_move_vertically = NodePath(".")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1.5209365)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50152093, 2.2239108)

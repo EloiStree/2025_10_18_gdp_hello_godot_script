@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="Quarantine Hello Godot Script"
+run/main_scene="uid://blgyx6vi1ofdj"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
